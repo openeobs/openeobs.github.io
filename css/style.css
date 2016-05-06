@@ -357,6 +357,15 @@
 				.icon.circle.fa-dribbble:hover {
 					background: #df93b8;
 				}
+			
+			.icon.circle.fa-envelope {
+				background: #da83ae;
+				color: white;
+			}
+
+				.icon.circle.fa-envelope:hover {
+					background: #df93b8;
+				}
 
 		.icon.featured {
 			cursor: default;
@@ -804,7 +813,7 @@
 	#banner {
 		background-attachment: scroll, scroll, scroll, fixed;
 		background-color: #645862;
-		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), url("../images/banner.jpg");
+		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), url("../images/eobs_banner.png");
 		background-position: bottom left, bottom right, top left, top center;
 		background-repeat: no-repeat, no-repeat, repeat, no-repeat;
 		background-size: 25em, 25em, auto, cover;
