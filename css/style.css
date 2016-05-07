@@ -275,6 +275,16 @@
 				width: 100%;
 			}
 
+		.image.trans {
+			display: block;
+			margin: 0 0 2em 0;
+		}
+
+			.image.trans img {
+				display: block;
+				width: 100%;
+			}
+
 /* Icon */
 
 	.icon {
@@ -924,6 +934,38 @@
 
 		#cta header {
 			margin-bottom: 2em;
+		}
+
+/* Video */
+
+	#video {
+		background-attachment: scroll, scroll, scroll, fixed;
+		background-color: #645862;
+		background-position: top left, top right, top left, bottom center;
+		background-repeat: no-repeat, no-repeat, repeat, no-repeat;
+		background-size: 25em, 25em, auto, cover;
+		color: white;
+		padding: 5em;
+		text-align: center;
+	}
+
+		#video header {
+			margin-bottom: 2em;
+		}
+
+		#video .container {
+    		position: relative;
+    		width: 100%;
+    		height: 0;
+    		padding-bottom: 56.25%;
+		}
+
+		#video .player {
+		    position: absolute;
+    		top: 0;
+    		left: 0;
+    		width: 100%;
+    		height: 100%;
 		}
 
 /* Footer */
