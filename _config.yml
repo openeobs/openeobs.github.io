@@ -14,6 +14,9 @@ github_username:  neovahealth
 # Build settings
 markdown: kramdown
 
+# Ignore retired files
+exclude: retired
+
 # Serving
 detach:  false
 port:    4000
