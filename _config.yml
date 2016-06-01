@@ -15,7 +15,7 @@ github_username:  neovahealth
 markdown: kramdown
 
 # Ignore retired files
-exclude: retired
+exclude: ['retired']
 
 # Serving
 detach:  false
