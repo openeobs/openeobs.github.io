@@ -19,7 +19,6 @@
   }
 }
 */
- 
 
- 
-.icon-nhs-logo:before { content: '\e800'; } /* '' */
+.icon-nhs-logo:before { content: '\e801'; } /* '' */
+.icon-open_source_initiative_keyhole:before { content: '\e802'; } /* '' */
