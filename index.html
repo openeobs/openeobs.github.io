@@ -106,40 +106,63 @@ layout: landing-page
 						</div>
 
 						<footer class="major">
+            				<ul class="buttons">
+                				<li><a href="#video" class="button fit scrolly">Watch The Video</a></li>
+                				<li><a href="#cta" class="button fit scrolly">Try it out</a></li>
+            				</ul>
+						</footer>
+					
+<!-- 						<footer>
+            				<ul class="buttons">
+                				<li><a href="#help_you" class="button fit scrolly">Tell Me More</a></li>
+                				<li><a href="#video" class="button fit scrolly">Watch The Video</a></li>
+            				</ul>
+        				</footer> -->
+
+
+					</section>
+					
+				<!-- VIDEO -->
+					<section id="video" class="wrapper style1 container special">
+					
+						<header>
+							<h2>One Minute Introduction</h2>
+						</header>
+						
+						<footer class="video container">
+						{% include youtubePlayer.html id="5nVspivJn-g" %}
+						</footer>
+				
+					</section>
+
+				<!-- CTA -->
+					<section id="cta">
+					
+						<header class="major">
+							<h2>Want to test drive open-eObs?</h2>
+						</header>
+						<footer>
 							<ul class="buttons">
-								<li><a href="#video" class="button">Watch The Video</a></li>
+								<li><a href="#" class="button special">Online Demo</a></li>
+								<li><a href="#" class="button">At your organisation</a></li>
 							</ul>
 						</footer>
 					
 					</section>
+
+				<!-- TWITTER -->
+					<section class="wrapper style3 container special" id="twitter">
 					
-		<!-- VIDEO -->
-			<section id="video" class="wrapper style1 container special">
-			
-				<header>
-					<h2>One Minute Introduction</h2>
-				</header>
-				
-				<footer class="video container">
-				{% include youtubePlayer.html id="5nVspivJn-g" %}
-				</footer>
-		
-			</section>
+						<header>
+
+						</header>
+						{% include twitter_js.html %}
+						<a class="twitter-timeline"
+						  data-widget-id="737960979670179840"
+						  href="https://twitter.com/openeobs"
+						  height="300">
+						</a>
+
+					</section>
 
 			</article>
-
-
-		<!-- CTA -->
-			<section id="cta">
-			
-				<header>
-					<h2>Want to test drive open-eObs?</h2>
-				</header>
-				<footer>
-					<ul class="buttons">
-						<li><a href="#" class="button special">Take My Money</a></li>
-						<li><a href="#" class="button">LOL Wut</a></li>
-					</ul>
-				</footer>
-			
-			</section>
