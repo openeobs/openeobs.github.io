@@ -1,4 +1,5 @@
 @import url("font-awesome.min.css");
+@import url("fontello.css");
 @import url("http://fonts.googleapis.com/css?family=Lato:300,400,900");
 
 /*
@@ -391,6 +392,38 @@
 			}
 
 		.icon > .label {
+			display: none;
+		}
+
+/* Fontello Icon */
+
+	.fonticon {
+		position: relative;
+	}
+
+		.fonticon:before {
+			-moz-osx-font-smoothing: grayscale;
+			-webkit-font-smoothing: antialiased;
+			font-family: fontello;
+			font-style: normal;
+			font-weight: normal;
+			text-transform: none !important;
+		}
+
+		.fonticon.featured {
+			cursor: default;
+			display: block;
+			margin: 0 0 1.5em 0;
+			opacity: 0.35;
+			text-align: center;
+		}
+
+			.fonticon.featured:before {
+				font-size: 5em;
+				line-height: 1em;
+			}
+
+		.fonticon > .label {
 			display: none;
 		}
 
@@ -923,7 +956,7 @@
 	#cta {
 		background-attachment: scroll, scroll, scroll, fixed;
 		background-color: #645862;
-		background-image: url("images/light-tl.svg"), url("images/light-tr.svg"), url("images/overlay.png"), url("../images/banner.jpg");
+		background-image: url("images/light-tl.svg"), url("images/light-tr.svg"), url("images/overlay.png"), url("../images/eobs_banner.png");
 		background-position: top left, top right, top left, bottom center;
 		background-repeat: no-repeat, no-repeat, repeat, no-repeat;
 		background-size: 25em, 25em, auto, cover;
