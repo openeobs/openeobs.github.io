@@ -7,10 +7,10 @@ s3_bucket: openeobs.org
 # index_document: index.html
 # error_document: error.html
 
-max_age:
-  "assets/*": 3600
-  "images/*": 3600
-  "*": 300
+# max_age:
+#   "*": 3600
+
+gzip: true
 
 gzip:
   - .html
@@ -20,8 +20,11 @@ gzip:
 
 cache_control:
   "assets/*": public, no-transform, max-age=3600, s-maxage=3600
+  "css/*": public, no-transform, max-age=3600, s-maxage=3600
+  "fonts/*": public, no-transform, max-age=3600, s-maxage=3600
   "images/*": public, no-transform, max-age=3600, s-maxage=3600
-  "*": no-cache, no-store
+  "js/*": public, no-transform, max-age=3600, s-maxage=3600
+  # "*": public, no-transform, max-age=300, s-maxage=300
 
 s3_endpoint: eu-west-1
 
