@@ -1,0 +1,52 @@
+s3_id: <%= ENV['S3_ID'] %>
+s3_secret: <%= ENV['S3_SECRET'] %>
+s3_bucket: openeobs.org
+
+# site: path-to-your-website
+
+# index_document: index.html
+# error_document: error.html
+
+# max_age:
+#   "*": 3600
+
+gzip: true
+
+gzip:
+  - .html
+  - .xml
+  - .css
+  - .js
+
+cache_control:
+  "assets/*": public, no-transform, max-age=3600, s-maxage=3600
+  "css/*": public, no-transform, max-age=3600, s-maxage=3600
+  "fonts/*": public, no-transform, max-age=3600, s-maxage=3600
+  "images/*": public, no-transform, max-age=3600, s-maxage=3600
+  "js/*": public, no-transform, max-age=3600, s-maxage=3600
+  # "*": public, no-transform, max-age=300, s-maxage=300
+
+s3_endpoint: eu-west-1
+
+# ignore_on_server: that_folder_of_stuff_i_dont_keep_locally
+
+# exclude_from_upload:
+#   - those_folders_of_stuff
+#   - i_wouldnt_want_to_upload
+
+# s3_reduced_redundancy: true
+
+# concurrency_level: 5
+
+# redirects:
+#   index.php: /
+#   about.php: about.html
+#   music-files/promo.mp4: http://www.youtube.com/watch?v=dQw4w9WgXcQ
+
+# routing_rules:
+#   - condition:
+#       key_prefix_equals: blog/some_path
+#     redirect:
+#       host_name: blog.example.com
+#       replace_key_prefix_with: some_new_path/
+#       http_redirect_code: 301

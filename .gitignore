@@ -1,0 +1,8 @@
+# For jekyll
+_site/
+.sass-cache/
+Gemfile.lock
+
+# For AWS Credentials
+# Not that this will stop anything stupid happening.....
+.aws*

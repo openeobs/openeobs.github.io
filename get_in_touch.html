@@ -1,0 +1,91 @@
+---
+layout: default
+---		
+		<!-- Main -->
+			<article id="main">
+
+				<header class="special container">
+					<span class="icon fa-envelope"></span>
+					<h2>Get In Touch</h2>
+					<p>Use the form below to contact the open-eObs Team.</p>
+				</header>
+					
+				<!-- One -->
+					<section class="wrapper style4 special container small">
+					
+						<!-- Content -->
+							<div class="content">
+								<form action="https://formspree.io/openeobs@neovahealth.co.uk" method="POST">
+
+									<div class="row half collapse-at-2">
+										<div class="6u">
+											<input type="text" name="name" placeholder="Name" />
+										</div>
+										<div class="6u">
+											<input type="email" name="_replyto" placeholder="Email" />
+										</div>
+									</div>
+
+									<div class="row half">
+										<div class="12u">
+										<input type="text" id="ajax" list="json-datalist" placeholder="Organisation" name="organisation">
+										<datalist id="json-datalist"></datalist>
+
+										</div>
+									</div>
+
+									<div class="row half">
+										<div class="12u">
+											<input type="text" name="subject" placeholder="Subject" />
+										</div>
+									</div>
+									<div class="row half">
+										<div class="12u">
+											<textarea name="message" placeholder="Message" rows="7"></textarea>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="12u">
+											<input type="hidden" name="_next" value="http://{{ site.fqdn }}/get_in_touch_thanks.html" />
+										</div>
+									</div>
+
+
+									<div class="row">
+										<div class="12u">
+											<ul class="buttons">
+												<li><input type="submit" class="special" value="Send Message" /></li>
+											</ul>
+										</div>
+									</div>
+								</form>
+							</div>
+							
+					</section>
+				
+			</article>
+
+
+<script>var dataList = document.getElementById('json-datalist');
+	var input = document.getElementById('ajax');
+	var request = new XMLHttpRequest();
+	request.onreadystatechange = function (response) {
+	    if (request.readyState === 4) {
+	        if (request.status === 200) {
+	            var jsonOptions = JSON.parse(request.responseText);
+	            jsonOptions.forEach(function (item) {
+	                var option = document.createElement('option');
+	                option.value = item;
+	                dataList.appendChild(option);
+	            });
+	            input.placeholder = 'Enter your organisation name';
+	        } else {
+	            input.placeholder = 'Couldn\'t load datalist options :(';
+	        }
+	    }
+	};
+	input.placeholder = '';
+	request.open('GET', 'assets/nhs-trusts.json', true);
+	request.send();
+</script>
