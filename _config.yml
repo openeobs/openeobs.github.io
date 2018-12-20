@@ -5,8 +5,8 @@ description: > # this means to ignore newlines until "baseurl:"
   open-eObs - The mobile app for nursing observations & assessments,
   multidisciplinary escalation, patient handover and workload management.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "https://openeobs.github.io" # the base hostname & protocol for your site
-fqdn: "openeobs.github.io" # the FQDN for your site
+url: "https://openeobs.org" # the base hostname & protocol for your site
+fqdn: "openeobs.org" # the FQDN for your site
 # fqdn: "192.168.1.10:4000" # the FQDN for your site
 twitter_username: openeobs
 github_username:  openeobs
